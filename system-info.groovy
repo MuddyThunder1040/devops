@@ -1,5 +1,6 @@
 pipeline {
     agent any
+
     stages {
         stage('Get System Info') {
             steps {
@@ -16,9 +17,10 @@ pipeline {
             }
         }
     }
-}
+
     post {
         always {
             echo 'Pipeline completed.'
         }
     }
+}
